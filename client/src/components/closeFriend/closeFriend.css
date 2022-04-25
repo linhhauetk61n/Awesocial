@@ -1,0 +1,27 @@
+.sidebarFriend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.sidebarFriend:hover {
+    background-color: #dadde1;
+}
+.sidebarFriendImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 15px;
+    border: 2px solid #bec3c9;
+}
+.sidebarFriendName {
+    font-weight: 500;
+    color: #050505;
+}
+@media only screen and (max-width: 600px) {
+    .sidebarFriendName {
+        display: none;
+    }
+}

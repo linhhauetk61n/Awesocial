@@ -1,0 +1,38 @@
+.chatOnlineText {
+    font-size: 20px;
+    font-weight: 500;
+    color: #050505;
+}
+.chatOnlineUser {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.chatOnlineImgContainer {
+    margin-right: 10px;
+    position: relative;
+}
+.chatOnlineImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chatOnlineDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: gray;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    border: 2px solid white;
+}
+.chatOnlineDot.online {
+    background-color: limegreen;
+}
+.chatOnlineName {
+    font-weight: 500;
+    color: #050505;
+}

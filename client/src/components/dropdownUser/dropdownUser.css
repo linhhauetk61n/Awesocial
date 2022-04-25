@@ -1,0 +1,48 @@
+.dropdownContainer {
+    /* position: absolute;
+    top: 50px;
+    right: 20px; */
+    width: 300px;
+    /* height: 150px; */
+    padding: 10px 30px;
+    background-color: transparent;
+    /* background-color: #f7f8fc; */
+
+    /* border-radius: 10px; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+.userProfile {
+    display: flex;
+    border-bottom: 2px solid #65676b;
+    padding-bottom: 10px;
+}
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+}
+.info {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.username {
+    font-size: 18px;
+    font-weight: 500;
+    color: #050505;
+}
+.desc {
+    font-size: 14px;
+    color: #65676b;
+}
+.listItem {
+    padding: 10px 0;
+    text-align: center;
+}
+.item {
+    border: none;
+    cursor: pointer;
+}

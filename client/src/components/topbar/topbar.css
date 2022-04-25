@@ -1,0 +1,170 @@
+.topbar {
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    color: #ffffff;
+}
+.topbarContainer {
+    height: 50px;
+    width: 100%;
+    background-color: #1877f2;
+    display: flex;
+    align-items: center;
+}
+.topbarLeft {
+    flex: 3;
+}
+.logo {
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+.topbarCenter {
+    flex: 5;
+}
+.searchbar {
+    width: 100%;
+    height: 33px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.searchIcon {
+    font-size: 20px !important;
+    color: #707176;
+    margin-left: 10px;
+}
+.searchInput {
+    border: none;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 5px;
+    color: #76777b;
+}
+.searchInput:focus {
+    outline: none;
+}
+.searchResult {
+    position: absolute;
+    background-color: #f9fbff;
+    width: 100%;
+    top: 30px;
+    padding: 30px 10px 15px;
+    border-radius: 0 0 10px 10px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #989898;
+}
+.searchResultTitle {
+    padding-left: 30px;
+    font-weight: 500;
+    color: #444;
+    font-size: 18px;
+}
+.searchResultBox {
+    display: flex;
+    padding-top: 10px;
+}
+.searchResultGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.searchResultItem {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.searchResultItemImg {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.searchResultItemName {
+    font-size: 15px;
+    font-weight: 500;
+    color: #050505;
+}
+.searchResultGroupTitle {
+    padding-left: 40px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.topbarRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+}
+.topbarLink {
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.topbarIcons {
+    display: flex;
+}
+.topbarIconItem {
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    color: #ffffff;
+}
+.topbarIconBadge {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: #ffffff;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.topbarImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .topbarLeft {
+        flex: 1;
+    }
+    .logo {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+    .topbarCenter {
+        flex: 5;
+    }
+    .searchInput {
+        font-size: 14px;
+    }
+    .topbarLink {
+        display: none;
+    }
+    .topbarRight {
+        flex: 1;
+    }
+    .topbarIconItem {
+        margin-right: 5px;
+    }
+    .topbarImg {
+        width: 20px;
+        height: 20px;
+    }
+}

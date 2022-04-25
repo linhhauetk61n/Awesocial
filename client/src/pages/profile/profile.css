@@ -1,0 +1,75 @@
+.profile {
+    display: flex;
+}
+.profileRight {
+    flex: 9;
+    padding: 20px 0;
+}
+.profileRightTop {
+    margin: 0 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.profileRightBottom {
+    display: flex;
+}
+.profileCover {
+    height: 250px;
+    position: relative;
+}
+.profileBackgroundImg {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+
+    object-fit: cover;
+}
+.profileUserImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin: auto;
+    border: 3px solid white;
+}
+.profileInfo {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profileInfoName {
+    font-size: 24px;
+}
+.profileInfoDesc {
+    font-weight: 400;
+}
+.profileButton {
+    position: absolute;
+    top: 220px;
+    right: 100px;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    justify-content: center;
+}
+.profileButton:focus {
+    outline: none;
+}
+
+.profileButtonText {
+    font-size: 20px;
+    padding: 0 10px;
+}

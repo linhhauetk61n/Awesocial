@@ -1,0 +1,12 @@
+.feed {
+    flex: 5.5;
+    padding: 20px 10px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #f0f2f5;
+}
+@media only screen and (max-width: 600px) {
+    .feed {
+        flex: 6;
+    }
+}
