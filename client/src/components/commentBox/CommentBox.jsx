@@ -54,7 +54,9 @@ const CommentBox = ({ comment, currentUser, handleDeleteComment }) => {
                     </div>
                 )}
             </div>
-            <span className="commentDate">{moment(comment.createdAt)}</span>
+            <span className="commentDate">
+                {moment(comment.createdAt).fromNow()}
+            </span>
         </div>
     );
 };

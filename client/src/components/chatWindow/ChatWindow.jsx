@@ -5,7 +5,6 @@ import * as api from "../../api";
 import { useSelector, useDispatch } from "react-redux";
 import { getMessages, sendMessage } from "../../actions/MessengerActions";
 import { messengerSlice } from "../../redux/messengerSlice";
-// import io from "socket.io-client";
 const ChatWindow = ({ currentConv, currentUser, socket, arriverMessage }) => {
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     const messages = useSelector((state) => state.messenger.messages);

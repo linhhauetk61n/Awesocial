@@ -33,7 +33,9 @@ const Message = ({ message, receiver, currentUser }) => {
                 </span>
             </div>
             <span className="messageText">{message.messageText}</span>
-            <span className="messageTime">{moment(message.createdAt)}</span>
+            <span className="messageTime">
+                {moment(message.createdAt).fromNow()}
+            </span>
         </div>
     );
 };

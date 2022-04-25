@@ -110,7 +110,7 @@ const Post = ({ post, currentUser }) => {
                         </Link>
 
                         <span className="postDate">
-                            {moment(post.createdAt)}
+                            {moment(post.createdAt).fromNow()}
                         </span>
                     </div>
                     <div className="postTopRight">
