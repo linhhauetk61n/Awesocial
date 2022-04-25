@@ -1,7 +1,7 @@
 import { MoreVert } from "@material-ui/icons";
 import React from "react";
 import "./commentBox.css";
-import { format } from "timeago.js";
+import moment from "moment";
 import { getUser } from "../../api";
 const CommentBox = ({ comment, currentUser, handleDeleteComment }) => {
     const [commentOwner, setCommentOwner] = React.useState(null);
@@ -54,7 +54,7 @@ const CommentBox = ({ comment, currentUser, handleDeleteComment }) => {
                     </div>
                 )}
             </div>
-            <span className="commentDate">{format(comment.createdAt)}</span>
+            <span className="commentDate">{moment(comment.createdAt)}</span>
         </div>
     );
 };

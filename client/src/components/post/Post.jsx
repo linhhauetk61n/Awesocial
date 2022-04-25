@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./post.css";
 import { MoreVert } from "@material-ui/icons";
-import { format } from "timeago.js";
+import moment from "moment";
 import { Link } from "react-router-dom";
 import ThumbUpAltOutlinedIcon from "@material-ui/icons/ThumbUpAltOutlined";
 import CommentBox from "../commentBox/CommentBox";
@@ -110,7 +110,7 @@ const Post = ({ post, currentUser }) => {
                         </Link>
 
                         <span className="postDate">
-                            {format(post.createdAt)}
+                            {moment(post.createdAt)}
                         </span>
                     </div>
                     <div className="postTopRight">

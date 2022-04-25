@@ -1,6 +1,6 @@
 import React from "react";
 import "./message.css";
-import { format } from "timeago.js";
+import moment from "moment";
 
 const Message = ({ message, receiver, currentUser }) => {
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
@@ -33,7 +33,7 @@ const Message = ({ message, receiver, currentUser }) => {
                 </span>
             </div>
             <span className="messageText">{message.messageText}</span>
-            <span className="messageTime">{format(message.createdAt)}</span>
+            <span className="messageTime">{moment(message.createdAt)}</span>
         </div>
     );
 };
