@@ -5,6 +5,7 @@ import { CircularProgress } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
 
 import { register } from "../../actions/AuthActions";
+import { Link } from "react-router-dom";
 
 const Register = () => {
     const [username, setUsername] = React.useState("");
@@ -63,9 +64,9 @@ const Register = () => {
                         )}
                     </button>
                 </form>
-                <a className="alink" href="/login">
-                    Log into a account
-                </a>
+                <Link to="/login">
+                    <span className="alink">Log into a account</span>
+                </Link>
             </div>
         </AuthPage>
     );
