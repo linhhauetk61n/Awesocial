@@ -47,8 +47,8 @@ const Login = () => {
                 </form>
 
                 <span className="loginForgot">Forgot Password?</span>
-                <Link to="/register">
-                    <span className="alink">Create a new account</span>
+                <Link to="/register" className="alink">
+                    Create a new account
                 </Link>
             </div>
         </AuthPage>

@@ -64,8 +64,8 @@ const Register = () => {
                         )}
                     </button>
                 </form>
-                <Link to="/login">
-                    <span className="alink">Log into a account</span>
+                <Link to="/login" className="alink">
+                    Log into a account
                 </Link>
             </div>
         </AuthPage>
